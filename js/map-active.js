@@ -1,14 +1,14 @@
 $(document).ready(function(){
 /*====================================
 	Google Map JS
-======================================*/ 	
+======================================*/
 (function(){
 
 	var map;
 	map = new GMaps({
 		el: '#myMap',
-		lat: 51.507351,
-		lng: -0.127758,
+		lat: 0.32162,
+		lng: 32.62521,
 		scrollwheel:false,
 		zoom: 15,
 		zoomControl : false,
@@ -21,8 +21,8 @@ $(document).ready(function(){
 
 	var image = 'img/map-marker.png';
 	map.addMarker({
-		lat: 51.507351,
-		lng: -0.127758,
+		lat: 0.32162,
+		lng: 32.62521,
 		icon: image,
 		animation: google.maps.Animation.DROP,
 		verticalAlign: 'bottom',
