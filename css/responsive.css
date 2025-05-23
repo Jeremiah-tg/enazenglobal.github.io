@@ -144,6 +144,10 @@
 }
 .latest-works.top{
 	margin-top:120px;
+  /* background-color: #F4F7FC; */
+}
+.newslatter{
+background-color: #F4F7FC;
 }
 .latest-works .works-menu {
 	text-align: left;
