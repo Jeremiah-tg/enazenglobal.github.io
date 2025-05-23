@@ -1,7 +1,60 @@
+@import "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css";
+.services .single-service {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row.equal-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.equal-height > [class*='col-'] {
+  display: flex;
+	margin-bottom: 30px;
+}
+.faq-area .panel {
+	margin-bottom: 15px;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.faq-title a {
+	display: block;
+	padding: 15px 20px;
+	background: #f7f7f7;
+	color: #333;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background 0.3s ease;
+}
+
+.faq-title a:hover,
+.faq-title a.collapsed:focus {
+	background: #eaeaea;
+}
+
+.faq-body {
+	padding: 20px;
+	background: #ffffff;
+	border-top: 1px solid #ddd;
+	color: #555;
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+.services .row {
+	grid-template-columns: 1fr; /* single column layout for mobile */
+	row-gap: 10px;
+}
+
 .section-title {
 	padding: 0px;
 }
+
 .section{
 	padding:70px 0px;
 }
@@ -243,7 +296,7 @@
 	background:#fff;
 }
 .header .slicknav_nav li:hover a{
-	
+
 }
 .header .slicknav_nav .dropdown li a{
 	color:#333;
