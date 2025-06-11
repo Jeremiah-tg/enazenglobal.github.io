@@ -1,10 +1,10 @@
 /* =====================================
-Template Name: 	Corpress
-Author Name: Naimur Rahman
-Author Url: www.themebazzar.com
+Template Name: 	Enazen
+Author Name: Jeremiah J. Okello
+Author Url: www.jjokello.online
 Description: Enazen Global Consults.
 Version:	1.1
-========================================*/     
+========================================*/
 /*=======================================
 [Start Activation Code]
 =========================================
@@ -23,11 +23,11 @@ Version:	1.1
 	* Preloader JS
 =========================================
 [End Activation Code]
-=========================================*/ 
+=========================================*/
 (function($) {
     "use strict";
      $(document).on('ready', function() {
-		
+
 		jQuery(window).on('scroll', function() {
 		if ($(this).scrollTop() > 100) {
 			$('.header .main-menu').addClass("sticky");
@@ -35,45 +35,67 @@ Version:	1.1
 			$('.header .main-menu').removeClass("sticky");
 		}
 		});
-		
+
 		// Mobile Menu JS  //
 		$('.mobile-menu').slicknav({
 			prependTo:".mobile-nav",
 		});
-		
+
 		// Search JS  //
 		$('.top-search a').on( "click", function(){
 			$('.search-top').toggleClass('active');
 		});
-		
+
 		$('.right-barc .fa-bars').on( "click", function(){
 		$('.sidebar-menu').addClass('active');
 		});
-		
+
 		$('.cross').on( "click", function(){
 			$('.sidebar-menu').removeClass('active');
 		});
-		
+
 		// Home Slider JS  //
-		$('.home-slider').owlCarousel({
-			items:1,
-			autoplay:false,
-			autoplayTimeout:5000,
-			smartSpeed: 400,
-			animateIn: 'fadeIn',
-			animateOut: 'fadeOut',
-			autoplayHoverPause:true,
-			loop:true,
-			merge:true,
-			nav:true,
-			dots:false,
-			navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-		});
-		
-		
+    // $('.home-slider').on('initialized.owl.carousel changed.owl.carousel', function(event) {
+    //   // Wait for DOM update
+    //   setTimeout(() => {
+    //     // Remove animation from all
+    //     $('.progress-bar-fill').css('width', '0%').removeClass('animate');
+    //
+    //     // Add animation to active slide only
+    //     $('.owl-item.active .progress-bar-fill').addClass('animate').css('width', '100%');
+    //   }, 50);
+    // });
+//     $('.home-slider').hover(
+//   function () {
+//     // On mouse enter: pause progress bar
+//     $('.owl-item.active .progress-bar-fill').css('animation-play-state', 'paused');
+//   },
+//   function () {
+//     // On mouse leave: resume progress bar
+//     $('.owl-item.active .progress-bar-fill').css('animation-play-state', 'running');
+//   }
+// );
+
+    $('.home-slider').owlCarousel({
+      items: 1,
+      autoplay: true,
+      autoplayTimeout: 9000,
+      smartSpeed: 3000,
+      animateIn: 'fadeIn',
+      animateOut: 'fadeOut',
+      autoplayHoverPause: true,
+      loop: true,
+      merge: true,
+      nav: true,
+      dots: false,
+      navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+    });
+
+
+
 		// Portfolio Single Slider JS  //
 		$('.single-p-slider').owlCarousel({
-			autoplay:false,
+			autoplay:true,
 			autoplayTimeout:4500,
 			smartSpeed: 500,
 			autoplayHoverPause:true,
@@ -94,10 +116,10 @@ Version:	1.1
 				}
 			}
 		});
-		
+
 		// Testimonial Slider JS  //
 		$('.testimonial-slider').owlCarousel({
-			autoplay:false,
+			autoplay:true,
 			autoplayTimeout:3500,
 			smartSpeed:400,
 			autoplayHoverPause:true,
@@ -118,10 +140,10 @@ Version:	1.1
 				}
 			}
 		});
-		
+
 		// Team Slider JS  //
 		$('.team-slider').owlCarousel({
-			autoplay:false,
+			autoplay:true,
 			autoplayTimeout:5000,
 			smartSpeed: 400,
 			autoplayHoverPause:true,
@@ -142,13 +164,14 @@ Version:	1.1
 				}
 			}
 		});
-		
-		
+
+
+
 		/*====================================
 			Isotop
-		======================================*/ 
+		======================================*/
 		$(window).on('load', function() {
-			
+
 			if ($.fn.isotope) {
                 $(".isotop-active").isotope({
                     filter: '*',
@@ -171,7 +194,7 @@ Version:	1.1
                 });
             }
 		});
-		
+
 		// Counter JS  //
 		$('.counter').counterUp({
 			delay: 15,
@@ -185,27 +208,27 @@ Version:	1.1
 			enabled:true
 			}
 		});
-		
+
 		// Video Popup  //
 		$('.video-popup').magnificPopup({
-			type: 'video',	
+			type: 'video',
 		});
-		
+
 		// stellar //
 		$.stellar({
 		  horizontalOffset: 0,
 		  verticalOffset: 0
 		});
-		
-		
+
+
 		/*====================================
 			Wow JS
-		======================================*/		
-		var window_width = $(window).width();   
+		======================================*/
+		var window_width = $(window).width();
 			if(window_width > 767){
             new WOW().init();
 		}
-		
+
 		// Scroll Up //
 		$(function () {
 		  $.scrollUp({
@@ -220,7 +243,7 @@ Version:	1.1
 			activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
 			zIndex: 2147483647           // Z-Index for the overlay
 		  });
-		});    
+		});
 
 	});
 	/*====================================

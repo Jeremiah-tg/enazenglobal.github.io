@@ -125,6 +125,36 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+.progress-bar-wrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #fff;
+  /* animation: progressAnim 7s linear forwards; */
+}
+.progress-bar-fill.animate {
+  animation: progressAnim 8s linear forwards;
+  animation-play-state: running;
+}
+
+
+@keyframes progressAnim {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
 
 /* 🔄 Responsive for small screens */
 @media (max-width: 768px) {
