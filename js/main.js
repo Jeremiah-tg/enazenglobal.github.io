@@ -250,8 +250,9 @@ Version:	1.1
 			Preloader JS
 		======================================*/
 		$(window).load(function(){
-				$('.preloader').fadeOut('slow', function(){
+				$('.preloader').fadeOut('fast', function(){
 				$(this).remove();
 			});
 		});
 })(jQuery);
+
