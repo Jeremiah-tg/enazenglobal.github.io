@@ -256,7 +256,7 @@ a,button{
   right: 0;
   bottom: 0;
   background-color: #fff;
-  z-index: 9999999;
+  /* z-index: 9999999; */
 }
 
 .preloader-inner {
@@ -273,8 +273,8 @@ a,button{
   width: 33%;
   height: 33%;
   float: left;
-  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+  -webkit-animation: sk-cubeGridScaleDelay 0.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 0.3s infinite ease-in-out; 
 }
 .preloader-inner .one {
   -webkit-animation-delay: 0.2s;
@@ -282,7 +282,7 @@ a,button{
 .preloader-inner .two {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s; }
-.preloader-inner .three {
+/* .preloader-inner .three {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s; }
 .preloader-inner .four {
@@ -302,7 +302,7 @@ a,button{
           animation-delay: 0.1s; }
 .preloader-inner .nine {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
+          animation-delay: 0.2s; } */
 
 @-webkit-keyframes sk-cubeGridScaleDelay {
   0%, 70%, 100% {
